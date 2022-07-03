@@ -10,11 +10,12 @@ Registration Page
 <form>
 
 <label> Firstname </label>       
-<input type="text" name="firstname" size="15"/> <br> <br>
+<input type="text" name="firstname" size="15"/>
 <label> Middlename: </label>   
-<input type="text" name="middlename" size="15"/> <br> <br>
+<input type="text" name="middlename" size="15"/> 
 <label> Lastname: </label>       
-<input type="text" name="lastname" size="15"/> <br> <br>
+<input type="text" name="lastname" size="15"/> 
+<br>
 
 <label> 
 Course :
