@@ -1,111 +1,56 @@
+<!DOCTYPE HTML>
+<!-- This is how HTML comments look like -->
 <html>
+<!-- the title will appear on the page-->
 <head>
-    <style>
-        body{
-   font-size:20px;
-            color: white;
-            background-size: cover;
-        }
-         .box{ width: 900px;
-       float:right;
-       border:1px solid none;}
-       .box ul li{
-           width: 120px;
-           float:left;
-           margin: 10px auto;
-           text-align: center;
-       }
- .mainmenu
-.mainmenu a
-.mainmenu a:hover
-.mainmenu img{
-position: fixed;
-z-index: -1;
-top:0px; left:0px; width:100%; height: 100vh;
-opacity: 0.9;
-/*object-fit:cover;*/
-transition: all ease 0.5s;
-}
-   .wd{
-           width: 300px;
-           height: 539px;
-           background-color: black;
-           opacity: 0.8;
-           padding: 55px;
-       }
-       .wd h1{
-           text-align: center;
-           text-transform: uppercase;
-           font-weight: 300px;
-       }
-       .wd h4{
-           text-align: justify;
-           color:darkgray;
-           font-weight: 100px;
-       }
-       .wd h2{
-           text-align: center;
-           text-transform: uppercase;
-           font-weight: normal;
-           margin: 40px auto;
-       }
-       .opt form , input[type="button"]{
-           background-color: black;
-           color:white;
-         /* padding:10px;*/
-           margin:-14px auto;
-           padding-left: 50px;
-           padding-right: 50px;
-           text-align: center;
-           font-size: 16px;
-       }
-     form, input[type="button"] {
-       animation: glowing 300ms infinite;
-       font-weight: 500%;
-      }
-      @keyframes glowing {
- 0% {
-   background-color: red;
- }
- 50% {
-   background-color: orange;
- }
- 100% {
-   background-color: blue;
- }
-}
-   </style>
+<title>Employee Interests Survey</title>
 </head>
 <body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-$(function(){
-var image = $(".mainmenu").find('img').attr('src');
-$(".mainmenu a").mouseover(function(){
-var newimg = $(this).attr('data-image');
-$(this).parent().find('img').attr("src", newimg);
-});
-});
-</script>
-   <div class="box">
-<div class="mainmenu">
-<img src="food.png">
-<a data-image = "food.png" href=""> Home</a>
-<a data-image = "menucard.jpg" href=""> Menu</a>
-<a href=""> FAQ</a>
-<a href=""> Contact</a>
+<!-- as it is a survey form, we will need to submit the details, hence we use form -->
+<!-- We can give absolute url, or relative url like /nextpage.jsp, and specify POST or GET method -->
+<form action="http://google.co.in">
+<!-- If we remove this, every thing will move to the left of the page-->
+<div align="center">
+<!--Adds a heading to the form-->
+<h1>Employee Interests Survey form</h1>
+Enter your name:
+<!-- Input type text for small texts, specify size -->
+<input type="text" name="UserName" size=35 maxlength=35 value="">
+<!--Adds spaces - remove and see what happens -->
+</br></br>
+Enter your department:
+<input type="text" name="Deptt" size=35 maxlength=35 value=""> </br> </br>
+Tell us a little about yourself:
+<!-- For writing lot of text like descriptions with text wrapping,
+if you dont want text wrapping, you can add wrap = "off" (horizontal scrollbar -->
+<textarea name="Comments" cols=30 rows=4></textarea> </br> </br>
+Do you exercise at home?
+<!-- Radio buttons help you choose one out of the many values -->
+<input type="radio" name="exe" value=1>Yes
+<input type="radio" name="exe" value=2>No
+</p>
+How do you like to read about your favorite topics?
+<p>
+<!--Checkbox lets you select multiple options -->
+<input type="checkbox" name="Books">Books
+<input type="checkbox" name="Web">Online resources
+<input type="checkbox" name="Phone">Phone apps
+<input type="checkbox" name="Magazines">Magazines
+</p>
+What genre of movies do you like?
+<!--Select box lets you choose one of the multiple dropdown options-->
+<select name="moviepref" ><option>
+<option value=1 selected = "true">comedy
+<option value=2 >romance
+<option value=3 >thriller
+<option value=4 >horror
+<option value=5 >biopic
+</select>
+</br></br>
+<!--submits the information entered in the form by the user -->
+<input type=submit value="Submit form">
 </div>
-   </div>
-   <div class="wd">
-<h1> Welcome to xxx</h1>
-<h4> <i>Order delicious food online, 100% quality, safety and taste assured.</i></h4>
-<h2> Call 999999999 for reservations</h2>
-<div class="opt">
-<form action="" method="post">
-<input type="button" value="ORDER NOW">
 </form>
-</div>
-</div>
 </body>
 </html>
 
