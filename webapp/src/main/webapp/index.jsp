@@ -1,40 +1,51 @@
-<html>  
-<head>  
-<title>  
-Example of required attribute with input element   
-</title>  
-<style>  
-div  
-{  
-padding: 10px 0;  
-}  
-</style>  
-<head>  
-<body>  
-<form>  
-<div>  
-<label>Name</label>   
-<input type="text" placeholder="Enter Name" name="name" required>   
-</div>  
-<div>   
-<label> E-mail </label>   
-<input type="email" placeholder="Enter email ID" name="email" required>   
-  
-</div>  
-<div>  
- <label> Mobile No. </label>   
-<input type="text" placeholder="Enter Your Mobile No." name="mobileno" required>  
-</div>  
-  
-<div>  
-<label>Password</label>   
-<input type="password" placeholder="Enter Password" name="psw" required>   
-<br>  
-  </div>   
-<button type="submit" VALUE="SUBMIT"> SUBMIT </button>  
-</form>  
-</body>  
-</html> 
+<Html>
+<head> 
+<title>
+Registration Page
+</title>
+</head>
+<body bgcolor="Lightskyblue">
+<br>
+<br>
+<form>
 
+<label> Firstname </label>       
+<input type="text" name="firstname" size="15"/> <br> <br>
+<label> Middlename: </label>   
+<input type="text" name="middlename" size="15"/> <br> <br>
+<label> Lastname: </label>       
+<input type="text" name="lastname" size="15"/> <br> <br>
 
+<label> 
+Course :
+</label> 
+<select>
+<option value="Course">Course</option>
+<option value="BCA">BCA</option>
+<option value="BBA">BBA</option>
+<option value="B.Tech">B.Tech</option>
+<option value="MBA">MBA</option>
+<option value="MCA">MCA</option>
+<option value="M.Tech">M.Tech</option>
+</select>
+
+<br>
+<br>
+<label> 
+Gender :
+</label><br>
+<input type="radio" name="male"/> Male <br>
+<input type="radio" name="female"/> Female <br>
+<input type="radio" name="other"/> Other
+<br>
+<br>
+
+<label> 
+Phone :
+</label>
+<input type="text" name="country code"  value="+91" size="2"/> 
+<input type="text" name="phone" size="10"/> <br> <br>
+Address
+<br>
+<textarea cols="80" rows="5" value="address">
 
